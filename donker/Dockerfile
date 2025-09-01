@@ -1,4 +1,4 @@
-FROM osrf/ros:jazzy-desktop
+FROM --platform=linux/arm64 osrf/ros:jazzy-desktop
 WORKDIR /ros2_ws
 ENV ROS2_DISTRO jazzy
 RUN sudo apt install ros-jazzy-depthai-ros
